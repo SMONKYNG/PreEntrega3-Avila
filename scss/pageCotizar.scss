@@ -1,5 +1,7 @@
-@import url(mainStyle.css);
-@import url(botones.css);
+@import "mainStyle";
+@import "botones";
+@import "footer";
+@import "header";
 
 .cuerpoCotizador{
     display: flex;
@@ -24,13 +26,11 @@
         font-size: 20px;
         font-weight: 600;
 }
-.textoCotizador{
-}
+
     .datosCotizador{
         padding: 0 0 30px 0;
     }
-    .datosCotizador label{
-    }
+
         .formDatosPersonales{
             border: 1.5px solid #000000;
             box-shadow: 10px 10px 0 0 #000000;

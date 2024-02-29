@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0 0 0 0;
+  padding: 0px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFEF4;
+  color: #222222;
+  font-family: "Kanit", sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+
+.boton01 {
+  font-family: "Kanit", sans-serif;
+  width: 180px;
+  height: 50px;
+  padding: 10px 5px;
+  font-size: 20px;
+  background-color: #80b8b4;
+  color: #FFFEF4;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 10px 10px 0px 0px #000000;
+}
+
+.boton01:hover {
+  background-color: #faeeb1;
+  color: #222222;
+}
+
+/*FOOTER*/
+footer {
+  margin-top: 110px;
+  width: 100%;
+}
+
+.footerOptions {
+  background-color: #222222;
+  text-decoration: none;
+  width: 100%;
+  color: #fffef4;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 30px 0px 30px 0px;
+}
+
+.listContacto {
+  justify-content: left;
+}
+
+.listRRSS img {
+  height: 20px;
+}
+
+.listRRSS li {
+  justify-content: space-between;
+  padding-right: 5px;
+  float: inline-start;
+}
+
+.footerOptions li {
+  list-style: none;
+  padding-top: 10px;
+}
+
+.footerOptions a {
+  color: #FFFEF4;
+  text-decoration: none;
+}
+
+.footerOptions a:hover {
+  color: #faeeb1;
+}
+
+.bannerFinal {
+  background-color: #222222;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.bannerFinal li {
+  list-style-type: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.bannerFinal a {
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .footerOptions {
+    width: 100%;
+    color: #fffef4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0px 30px 100px;
+  }
+  .sectionMasQueLentes {
+    margin: 0 0 30px 0;
+  }
+  .sectionOtrasConsultas {
+    margin: 0 0 30px 0;
+  }
+}
+/*HEADER*/
+.header {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 4;
+  height: 75px;
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+}
+
+.bannerOferta {
+  position: static;
+  background-color: #000000;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  top: 0px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 12px;
+  width: 100%;
+}
+
+.navBar {
+  position: static;
+  background-color: #80b8b4;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  top: 25px;
+  width: 100%;
+  border-bottom: 2px solid #000000;
+}
+
+.logoHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.logoHeader img {
+  margin-top: 5px;
+  height: 2rem;
+}
+
+.headerMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.headerMenu li {
+  border-right: 1px solid #222222;
+  list-style: none;
+  float: left;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.headerMenu li:last-child {
+  border-right: none;
+  padding-right: 0px;
+}
+
+.currentPage {
+  border-bottom: 1px solid;
+}
+
+.iconoCarrito img {
+  height: 15px;
+}
+
+.iconoAyuda IMG {
+  height: 18px;
+  padding-top: 2px;
+}
+
+.headerMenu a {
+  color: #222222;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFFEF4;
+}
+
+@media (max-width: 480px) {
+  .navBar {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    top: 25px;
+    width: 440px;
+    border-bottom: 2px solid #000000;
+  }
+  .headerMenu {
+    display: flex;
+    justify-content: center;
+  }
+  .headerMenu li {
+    font-size: 0.5rem;
+  }
+  .bannerOferta {
+    height: 15px;
+    width: 100%;
+    font-size: 0.5rem;
+  }
+  .logoHeader img {
+    margin: 5px 0 5px 0;
+    height: 1rem;
+  }
+}
+.sectionProfile {
+  margin: 80px 0 0 30px;
+  padding: 20px 0 0 30px;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menuProfile {
+  background-color: #D6D6D6;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 10px 30px 30px 10px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 10px 10px 0px 0px #000000;
+}
+
+.menuProfile img {
+  height: 30px;
+  margin-right: 5px;
+}
+
+.tituloMenuProfile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  padding: 0px 0 0 px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navMenuProfile {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  padding: 0 0 0 20px;
+}
+
+.navMenuProfile li {
+  list-style: none;
+}
+
+.navMenuProfile a {
+  color: #222222;
+  text-decoration: none;
+}
+
+.navMenuProfile a:hover {
+  color: #faeeb1;
+}
+
+.resumeProfile {
+  background-color: #FAEEB1;
+  padding: 30px 60px 60px 60px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  box-shadow: 10px 10px 0px 0px #000000;
+}
+
+.nombreResumeProfile {
+  padding: 0x;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: fit-content;
+}
+
+.nombreResumeProfile {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 0;
+}
+
+.nombreResumeProfile img {
+  height: 120px;
+  margin: 0 20px 0 0;
+}
+
+.resumeProfile table td {
+  border: 1.5px solid #000000;
+  border-radius: 10px;
+  width: 70px;
+}
+
+th {
+  background-color: #FAEEB1;
+  font-weight: 400;
+}
+
+.tablasDatosReceta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tituloTablaDiop {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 0;
+  margin-bottom: 30px;
+}
+
+.tablaDP {
+  margin: 10px;
+}
+
+.botonesReceta {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.btn {
+  font-family: "Kanit", sans-serif;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #80b8b4;
+  color: #FFFEF4;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 5px 5px 0px 0px #000000;
+}
+
+.btn:hover {
+  background-color: #625378;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=pageMicuenta.css.map */

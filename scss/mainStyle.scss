@@ -1,0 +1,30 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    margin: 0 0 0 0;
+    padding: 0px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFEF4;
+    color: #222222;
+    font-family: "Kanit", sans-serif;
+    a{
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+

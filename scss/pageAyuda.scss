@@ -1,5 +1,7 @@
-@import url(mainStyle.css);
-@import url(botones.css);
+@import "mainStyle";
+@import "botones";
+@import "footer";
+@import "header";
 
     .sectionPregFrec{ 
         background-color: #FFFFFF;
@@ -23,8 +25,6 @@
             font-weight: 600;}
         p{
             font-size: 15px;}
-    }
-.sectionContacto{
     }
     .sectionContacto form{
         background-color: #625378;
@@ -90,4 +90,3 @@
             .btn:hover{
                 background-color: #faeeb1;
                 color: #222222;}
-

@@ -1,7 +1,7 @@
-@import url(mainStyle.css);
-@import url(botones.css);
-@import url(footer.css);
-@import url(header.css);
+@import "mainStyle";
+@import "botones";
+@import "footer";
+@import "header";
 
 /* FOTO RECIEVER CATALOGO*/
 .landingCatalogo{
@@ -88,4 +88,3 @@
                 }
             }
         
-    }
